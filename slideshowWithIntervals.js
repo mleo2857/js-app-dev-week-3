@@ -6,9 +6,10 @@ var slideshow = {
   nextPhoto: function(){
     if (this.currentPhotoIndex === this.photoList.length - 1){
       console.log('End of slideshow');
+      this.pause();
     } else {
-      this.currentPhotoIndex += 1;
       console.log(this.photoList[this.currentPhotoIndex]);
+      this.currentPhotoIndex += 1;
     }
   },
 
@@ -28,14 +29,16 @@ var slideshow = {
   playInterval: null,
 
   play: function(){
-    this.playInterval = setInterval(function(){
-      this.nextPhoto();
-    }, 2000);
-  }
+    var self = this;
 
-  // pause: function(){
-  //
-  // }
+    this.playInterval = setInterval(function(){
+      self.nextPhoto();
+    }, 2000);
+  },
+
+  pause: function(){
+    clearInterval(this.playInterval);
+  }
 }
 
 slideshow.play()
