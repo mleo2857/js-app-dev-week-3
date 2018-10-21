@@ -32,8 +32,8 @@ var slideshow = {
     var self = this;
 
     this.playInterval = setInterval(function(){
-      self.nextPhoto();
-    }, 2000);
+      this.nextPhoto();
+    }.bind(this), 2000);
   },
 
   pause: function(){

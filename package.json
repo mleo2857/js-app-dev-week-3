@@ -1,0 +1,22 @@
+{
+  "name": "js-app-dev-week-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrayFilter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mleo2857/js-app-dev-week-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mleo2857/js-app-dev-week-3/issues"
+  },
+  "homepage": "https://github.com/mleo2857/js-app-dev-week-3#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
