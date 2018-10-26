@@ -8,7 +8,7 @@ var players = [
 	{firstName: 'Devin', lastName: 'Funchess', position: 'WR', touchdowns: 2}
 ];
 
-const playersNamedMike = players.filter(function(player){
+const playersNamedMike = players.find(function(player){
   return player.firstName === 'Mike';
 });
 
